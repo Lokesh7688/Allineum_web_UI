@@ -1,0 +1,825 @@
+<html>
+<head>
+<link href="css/components.css" rel="stylesheet" type="text/css">
+<link href="css/eco.css" rel="stylesheet" type="text/css">
+<link href="css/css1/style-zinnia.css" rel="stylesheet" type="text/css">
+<link href="css/css1/theme.css" rel="stylesheet" type="text/css">
+<link href="css/css1/vendor.bundle.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+
+.btn {
+    color: $white-color;   
+    background-color: #FFE141;
+    outline:0;
+    @include transition(background-color 0.3s ease);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-square {
+    border:0;
+}
+
+.btn-round {
+    border:0;
+    @include border-radius($border-radius);
+}
+
+.btn-lg {
+    padding: $button-padding/1.5 $button-padding*2.5 $button-padding/1.5 $button-padding*2.5;
+    font-size: 1.2em;
+}
+
+.btn-filled-green {
+    @include button-filled($green-color);
+}
+
+ 
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+
+<!--FAQ-->
+
+
+</style>
+
+
+<body>
+
+
+<div class="header-banner bg-theme-grad-alt">
+                <div class="nk-banner has-ovm has-mask">
+                    <div class="banner banner-fs banner-single banner-with-token-box-s1">
+                        <div class="ui-shape ui-shape-header ui-shape-light"></div>
+                        <div class="banner-wrap" id="home">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-sm-10 col-md-10 col-xl-9">
+                                        <div class="banner-caption tc-light text-center">
+                                            <img src="all_logo.png" height="300px" width="220px" style="padding-bottom: 25px;">
+
+                                            <div class="cpn-title animated fadeInUp" data-animate="fadeInUp" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">
+                                                <h1 class="title title-xl-s2 title-semibold">DC Coin | To Make An Impact</h1>
+                                            </div>
+                                            <div class="cpn-text cpn-text-center">
+                                                <p class="lead animated fadeInUp" data-animate="fadeInUp" data-delay="1.35" style="visibility: visible; animation-delay: 1.35s;">Charity Token with a robust Charitable Strategy</p>
+                                            </div>
+
+                                            <div class="cpn-btns">
+                                                <ul class="btn-grp justify-content-center animated fadeInUp" data-animate="fadeInUp" data-delay="1.45" style="visibility: visible; animation-delay: 1.45s;">
+                                                    <li><a href="" class="btn btn-md btn-round btn-with-icon btn-light">
+                                                        <span>Join Pre-Sale</span> 
+                                                        <em class="icon fas fa-angle-double-right"></em>
+                                                    </a></li>
+                                                    <li><a href="DC_Coin_whitepaper.pdf" class="btn btn-md btn-round btn-with-icon btn-light">
+                                                        <span>White Paper</span> 
+                                                        <em class="icon fas fa-angle-double-right"></em>
+                                                    </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div>
+                            <div class="banner-social-wrap text-center animated fadeIn" data-animate="fadeIn" data-delay="1.55" style="visibility: visible; animation-delay: 1.55s;">
+                                <ul class="banner-social banner-social-vertical">
+                                    <li><a href="https://t.me/dropofchangecoin"><em class="fab fa-telegram"></em></a></li>
+                                    <li><a href="https://www.facebook.com/DC-Coin-108677494859426/"><em class="fab fa-facebook-f"></em></a></li>
+                                    <li><a href="https://twitter.com/DCCOINOFFICIAL?s=08"><em class="fab fa-twitter"></em></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCpkMD0u5ifgL8moafxmNB9A"><em class="fab fa-youtube"></em></a></li>
+                                    <li><a href="https://www.instagram.com/dropofchangecoin/"><em class="fab fa-instagram"></em></a></li>
+                                    <li><a href="#"><em class="fab fa-medium-m"></em></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-ovm mask-b mask-contain-bottom"></div>
+                </div><!-- .nk-banner -->
+
+                
+                <!-- Place Particle Js -->
+				<div id="particles-bg" class="particles-container particles-bg"><canvas class="particles-js-canvas-el" width="1057" height="683" style="width: 100%; height: 100%;"></canvas></div>
+            </div>
+					
+					
+					
+					
+					
+					
+					
+					<section class="section bg-white" id="why">
+                <div class="ui-shape ui-shape-s1"></div>
+                <div class="container">
+                    <!-- Block @s -->
+                    <div class="nk-block nk-block-about">
+                        <div class="row align-items-center gutter-vr-30px">
+                            <div class="col-lg-7 text-center text-lg-left">
+                                <div class="nk-block-text">
+                                    <h2 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">About DC Coin</h2>
+                                    <p class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;"><strong>DC is a charity token with a robust charitable strategy designed to maximize profitability for investors and social impact reach in the world.</strong></p>
+                                    <h5 class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;"><strong style="color: #EF9D10;">Mission</strong></h5>
+                                    <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">To provide multiple utilities for DC coin holders and make it a native asset that is interoperable across the charity and the social media ecosystem.</p>
+                                    <h5 class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;"><strong style="color: #EF9D10;">Vision</strong></h5>
+                                    <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">To make a community as strong so that DC coin becomes a buzzword among the charitable fraternity.</p>
+                                    <h5 class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;"><strong style="color: #EF9D10;">How We Help</strong></h5>
+                                    <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">We've created a platform that helps investors gain long-term financial achievements, make a social impact, and participate in charitable giving.</p>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-lg-5">
+                                <div class="nk-block-img nk-block-img-s2 text-center text-lg-left animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                    <img src="tild.png" alt="" height="250px" width="250px">
+                                </div>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .block @e -->
+					<br><br></div>
+				<div class="nk-block nk-block-token mgb-m30" style="background-color:#0B0E11; color: #fff";>
+				
+				<br><br><br><br>
+                    <div class="section-head text-center wide-auto"> 
+                        <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">DC Coin Details</h4>
+                    </div>
+                    <div class="tokdis-list">
+                        <div class="container">
+                            <div class="row text-center text-lg-left">
+                                <div class="col-md">
+                                    <div class="tokdis-item animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                                        <span>Tokens Offered</span>
+                                        <h5>1,000,000,000</h5>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-md">
+                                    <div class="tokdis-item animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                        <span>Soft Cap (Public ICO)</span>
+                                        <h5>$4M</h5>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-md">
+                                    <div class="tokdis-item animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                                        <span>Hard Cap</span>
+                                        <h5>$20M</h5>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-lg-4">
+                                    <div class="tokdis-item animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                        <span>Tokens Distributed</span>
+                                        <h5>30 days after token sale ends</h5>
+                                    </div>
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div>
+                    </div>
+                    <div class="toktmln-list">
+                        <div class="container" >
+                            <div class="row" style="color:#FFFFFF";>
+                                <div class="col-lg" >
+                                    <div class="toktmln-item animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
+                                        <div>
+                                            <span>Token Sale I</span>
+                                            <span>September 15- October 15</span>
+                                        </div>
+                                        <div>
+                                            <span>67% Bonus</span>
+                                            <span>$0.35/token</span>
+                                        </div>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-lg">
+                                    <div class="toktmln-item animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                                        <div>
+                                            <span>Token Sale II</span>
+                                            <span>October 15 - November 15</span>
+                                        </div>
+                                        <div>
+                                            <span>40% Bonus</span>
+                                            <span>$0.50/token</span>
+                                        </div>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-lg">
+                                    <div class="toktmln-item animated fadeInUp" data-animate="fadeInUp" data-delay=".8" style="visibility: visible; animation-delay: 0.8s;">
+                                        <div>
+                                            <span>Token Sale III</span>
+                                            <span>November 15- December 15</span>
+                                        </div>
+                                        <div>
+                                            <span>20% Bonus</span>
+                                            <span>$0.75/token</span>
+                                        </div>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-lg">
+                                    <div class="toktmln-item animated fadeInUp" data-animate="fadeInUp" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
+                                        <div>
+                                            <span>Token Sale VI</span>
+                                            <span>December 15 - January 15</span>
+                                        </div>
+                                        <div>
+                                            <span>50% Bonus</span>
+                                            <span>$1.0/token</span>
+                                        </div>
+                                    </div>
+                                </div><!-- .col -->
+                                <!-- <div class="col-lg">
+                                    <div class="toktmln-item animated" data-animate="fadeInUp" data-delay="1">
+                                        <div>
+                                            <span>Token Sale V</span>
+                                            <span>June 01 - July 30</span>
+                                        </div>
+                                        <div>
+                                            <span>30% Bonus</span>
+                                            <span>$0.354344/token</span>
+                                        </div>
+                                        </div>
+                                        <div>
+                                    </div>
+                                </div> --><!-- .col -->
+                            </div><!-- .row -->
+                        </div>
+                    </div><br><br><br>
+                </div>
+            </section>
+<div class="section-head text-center wide-auto">
+                        <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color: #000">Token Allocation Forecast</h4>
+      <button class="btn btn-square btn-lg btn-filled-green" style="color: #000";>Distribution</button>
+	  <div class="nk-block nk-block-token">
+                        <div class="container">
+                            <div class="tab-s1 text-center">
+                                <div class="gap-10x d d-lg-block"></div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade animate" id="tab-dist-1">
+                                        <div class="token-alocate-item token-alocate-item-s1 shadow-none mb-0">
+                                            <div class="token-alocate-graph token-alocate-graph-s1 animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;">
+                                                <canvas class="chart-canvas chart-canvas-s1 chartjs-render-monitor" id="token-alocate-4" height="0" width="0" style="display: block; height: 0px; width: 0px;"></canvas>
+                                            </div>
+                                            <ul class="chart-data-s1" data-canvas="token-alocate-4" data-canvas-type="doughnut" data-border-color="#F5F6F9">
+                                                <li data-color="#fe4350" data-title="Token Sale Program" data-amount="60" class="chart-index-1"><span class="chart-l">Token Sale Program</span><span class="chart-p" style="background-color: #fe4350"><span>60%</span></span></li>
+                                                <li data-color="#fb6b5d" data-title="Reserve Fund" data-amount="8" class="chart-index-2"><span class="chart-l">Reserve Fund</span><span class="chart-p" style="background-color: #fb6b5d"><span>8%</span></span></li>
+                                                <li data-color="#ff5676" data-title="Team and Founders" data-amount="15" class="chart-index-3"><span class="chart-l">Team and Founders</span><span class="chart-p" style="background-color: #ff5676"><span>15%</span></span></li>
+                                                <li data-color="#ff774e" data-title="Board Advisors" data-amount="4" class="chart-index-4"><span class="chart-l">Board Advisors</span><span class="chart-p" style="background-color: #ff774e"><span>4%</span></span></li>
+                                                <li data-color="#ff6993" data-title="Ecosystem Development" data-amount="7" class="chart-index-5"><span class="chart-l">Ecosystem Development</span><span class="chart-p" style="background-color: #ff6993"><span>7%</span></span></li>
+                                                <li data-color="#ff6993" data-title="Marketing and Bounty" data-amount="6" class="chart-index-0 chart-index-6"><span class="chart-l">Marketing and Bounty</span><span class="chart-p" style="background-color: #ff6993"><span>6%</span></span></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- End tab-pane -->
+                                    <div class="tab-pane fade show animate active" id="tab-fund-1">
+                                        <div class="token-alocate-item token-alocate-item-s1 shadow-none mb-0">
+                                            <div class="token-alocate-graph token-alocate-graph-s1 animated fadeInUp" data-animate="fadeInUp" data-delay="0.4" style="visibility: visible; animation-delay: 0.4s;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                                <canvas class="chart-canvas chart-canvas-s1 chartjs-render-monitor" id="token-alocate-5" width="1960" height="460" style="display: block; height: 230px; width: 980px;"></canvas>
+                                            </div>
+                                            <ul class="chart-data-s1" data-canvas="token-alocate-5" data-canvas-type="doughnut" data-border-color="#F5F6F9">
+                                                <li data-color="#fe4350" data-title="Pre-Sale" data-amount="25" class="chart-index-1"><span class="chart-l">Pre-Sale</span><span class="chart-p" style="background-color: #fe4350"><span>25%</span></span></li>
+                                                <li data-color="#fb6b5d" data-title="Pre-Sale Distribution" data-amount="20" class="chart-index-2"><span class="chart-l">Pre-Sale Distribution</span><span class="chart-p" style="background-color: #fb6b5d"><span>20%</span></span></li>
+                                                <li data-color="#ff5676" data-title="Sale" data-amount="25" class="chart-index-3"><span class="chart-l">Sale</span><span class="chart-p" style="background-color: #ff5676"><span>25%</span></span></li>
+                                                <li data-color="#ff774e" data-title="Sale Distribution" data-amount="5" class="chart-index-4"><span class="chart-l">Sale Distribution</span><span class="chart-p" style="background-color: #ff774e"><span>5%</span></span></li>
+                                                <li data-color="#ff6993" data-title="Development" data-amount="15" class="chart-index-5"><span class="chart-l">Development</span><span class="chart-p" style="background-color: #ff6993"><span>15%</span></span></li>
+                                                <li data-color="#ff9465" data-title="Burn" data-amount="10" class="chart-index-0 chart-index-6"><span class="chart-l">Burn</span><span class="chart-p" style="background-color: #ff9465"><span>10%</span></span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div><!-- End tab-pane -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+	  
+	  
+	  </div>
+					
+
+
+			
+					
+					
+					
+
+<div id="ecosystem" class="section__eco">
+<div class="container-1440"><div class="eco-wrap">
+<div class="eco-left"><h2 class="h1">Our Project &amp; Ecosystem</h2>
+<p class="p" style="color: #fff";>From its inception, Shiba Inu has done things differently.
+ Starting with a supply of 1 quadrillion, our founder, Ryoshi, locked 50% in Uniswap, 
+ then “burned” the other half to Ethereum co-founder <span class="p--white">Vitalik Buterin</span> 
+ for safekeeping.<br><br>To help reverse the devastating spread of Covid-19 in India, VB has since utilized SHIB in the largest crypto donation in history, and then 
+ <span class="p--white">actually</span> burned 40% of its total supply to a dead wallet, ensuring our long-term success and stability. In the words of Ryoshi, 
+ “Thank you to the woofmeister for enabling true decentralization. Now we truly begin.” </p></div>
+ <div class="eco-right"><a href="https://etherscan.io/tx/0xabc68f7d712a1552468331c6ec29f5c112bb500ed5ffa660fe2b5af378921e37" target="_blank" class="eco-cta w-inline-block">
+ <div class="eco-cta-holder uni" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+ <div class="eco-cta-ico-wrap">
+ <img src="images/ico-uni.svg" loading="lazy" alt="" class="eco-cta--ico" style="opacity: 1;">
+ <img src="images/ico-uni-col.svg" loading="lazy" alt="" class="eco-cta--ico-hover" style="opacity: 0;"></div>
+ <div class="eco-cta--txt">Liquidity Locked to Uniswap</div></div><div class="eco-cta--bg"></div></a>
+ <a href="https://etherscan.io/tx/0xb65bcbb85c1633b0ab4e4886c3cd8eeaeb63edbb39cacdb9223fdcf4454fd2c7" target="_blank" class="eco-cta w-inline-block">
+ <div class="eco-cta-holder indi" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+ <div class="eco-cta-ico-wrap">
+ <img src="images/ico-icr.png" loading="lazy" alt="" class="eco-cta--ico wallet" style="opacity: 1;">
+ <img src="images/ico-icr-b.png" loading="lazy" alt="" class="eco-cta--ico-hover wallet" style="opacity: 0;"></div>
+ <div class="eco-cta--txt">India's Covid Relief Fund</div></div><div class="eco-cta--bg"></div></a>
+ <a href="https://etherscan.io/tx/0x125714bb4db48757007fff2671b37637bbfd6d47b3a4757ebbd0c5222984f905" target="_blank" class="eco-cta w-inline-block">
+ <div class="eco-cta-holder burn" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+ <div class="eco-cta-ico-wrap"><img src="images/ico-vb-burn.svg" loading="lazy" alt="" class="eco-cta--ico wallet" style="opacity: 1;">
+ <img src="images/ico-vb-burn-f.svg" loading="lazy" alt="" class="eco-cta--ico-hover wallet" style="opacity: 0;"></div>
+ <div class="eco-cta--txt">Vitalik Buterin Burn</div></div><div class="eco-cta--bg"></div></a></div></div></div>
+ 
+<div class="section__coin">
+<div class="container-1440">
+<div data-w-id="ea099555-1b52-f816-b372-4f0de20bb312" class="coin-grid"><div class="coin-box">
+<div class="coin-box-top"><div class="coin-img-wrap">
+<img src="images/shiba_coin-1.png" loading="lazy" data-w-id="5f864c4a-d4ce-4416-9e35-17cec00f6e38" alt="" class="coin-box--coin" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+<img src="images/coin-shad-1.png" loading="lazy" data-w-id="ed2e5c3e-6418-f76d-e3e5-0b4ed0021441" alt="" class="coin1-shad" style="opacity: 1;"></div>
+<img src="images/coin-elip.png" loading="lazy" sizes="(max-width: 991px) 100vw, 1000px" srcset="images/coin-elip-p-500.png 500w, images/coin-elip-p-800.png 800w, images/coin-elip.png 1050w" alt="" class="coin-box-elip-bg"></div>
+
+
+
+
+<div class="coin-box-content"><div class="coin-box-title-wrap">
+<h3 class="h3">SHIB</h3>
+<a href="https://www.dextools.io/app/uniswap/pair-explorer/0x811beed0119b4afce20d2583eb608c6f7af1954f" target="_blank" class="coin-box-graph w-inline-block">
+<img src="images/ico-graph-ora.svg" loading="lazy" alt="" class="coin-box-graph--ico">
+<div class="text-block">See Live Charts</div></a></div><p class="p"style="color:#fff";>
+The Shiba Inu token is our foundational currency that allows investors to hold millions, billions, or even trillions, of it in their wallets.<br>
+<br>Between its international recognition and its legitimate utility, <span class="p--orange">SHIB</span> 
+is up thousands of times and is constantly expanding its reach. SHIB is the first to be listed and incentivized on ShibaSwap, our proprietary DEX. </p>
+<a href="https://shibaswap.com/#/swap" target="_blank" class="cta-btn coin w-inline-block"><div class="cta-btn__txt">Buy SHIB</div>
+<div class="cta-btn__bg" style="opacity: 0;"></div></a></div></div> <div class="coin-box"><div class="coin-box-top"><div class="coin-img-wrap">
+<img src="images/bone_coin-2.png" loading="lazy" data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc829" alt="" class="coin-box--coin" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+<img src="images/coin-shad-2.png" loading="lazy" data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc82a" alt="" class="coin1-shad _2" style="opacity: 1;"></div>
+<img src="images/coin-elip.png" loading="lazy" sizes="(max-width: 991px) 100vw, 1000px" srcset="images/coin-elip-p-500.png 500w, images/coin-elip-p-800.png 800w, images/coin-elip.png 1050w" alt="" class="coin-box-elip-bg"></div>
+
+
+
+
+
+<div class="coin-box-content"><div class="coin-box-title-wrap"><h3 class="h3">BONE</h3>
+<a href="https://dex.guru/token/0x9813037ee2218799597d83d4a5b6f3b6778218d9-eth" target="_blank" class="coin-box-graph w-inline-block">
+<img src="images/ico-graph-ora.svg" loading="lazy" alt="" class="coin-box-graph--ico"><div class="text-block">See Live Charts</div></a></div>
+<p class="p" style="color:#fff";><span class="p--orange">BONE</span> has 250,000,000 tokens, and is designed to fit perfectly between the previous two tokens in regards to circulation supply.<br><br>
+ Moreover, the token is a Governance token which will allow the #ShibArmy to vote on upcoming proposals on our <span class="p--orange">Doggy DAO.</span> </p>
+ <a href="https://shibaswap.com/#/swap" target="_blank" class="cta-btn coin w-inline-block"><div class="cta-btn__txt">Buy BONE</div>
+ <div class="cta-btn__bg" style="opacity: 0;"></div></a></div></div></div></div><div id="particles-js2" class="particle-class">
+ <canvas class="particles-js-canvas-el" width="1057" height="1251" style="width: 100%; height: 100%;"></canvas></div></div>
+
+</div>
+
+
+<section class="section bg-white" id="services">
+                <div class="ui-shape ui-shape-s4"></div>
+                <div class="container">
+                    <!-- Section Head @s -->
+                    <div class="section-head text-center wide-auto-sm">
+                        <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000">Our Technology</h4>
+                        <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+						We used one of the most significant tokens is called ERC-20, which has emerged as the technical standard used for all smart
+						contracts on the Ethereum blockchain for token implementation.</p>
+                    </div><!-- .section-head @e -->
+                    <!-- Block @s -->
+                    <div class="nk-block nk-block-features">
+                        <div class="row align-items-center gutter-vr-30px">
+                            <div class="col-lg-7">
+                                <div class="row justify-content-between text-center text-lg-left">
+                                    <div class="col-xl-5 col-md-6">
+                                        <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                                            <div class="feature-icon feature-icon-s1">
+                                                <em class="icon icon-md ikon ikon-cash-1"></em>
+                                            </div>
+                                            <div class="feature-text">
+                                                <h5 class="title-sm tc-alternet">Ethereum BlockChain</h5>
+                                                <p>Ethereum is a decentralized public ledger for verifying and recording transactions.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    <div class="col-xl-5 col-md-6">
+                                        <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                            <div class="feature-icon feature-icon-s1">
+                                                <em class="icon icon-md ikon ikon-icon"></em>
+                                            </div>
+                                            <div class="feature-text">
+                                                <h5 class="title-sm tc-alternet">Highly Scalable</h5>
+                                                <p>Our platform provides great scalability features based on robust technology.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    
+                                    <div class="col-xl-5 col-md-6">
+                                        <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp" data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                                            <div class="feature-icon feature-icon-s1">
+                                                <em class="icon icon-md ikon ikon-shiled-3"></em>
+                                            </div>
+                                            <div class="feature-text">
+                                                <h5 class="title-sm tc-alternet">Safe &amp; Secure</h5>
+                                                <p>As all of the data is stored on blockchain, our system is Safe &amp; Secure to use.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                    <div class="col-xl-5 col-md-6">
+                                        <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp" data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
+                                            <div class="feature-icon feature-icon-s1">
+                                                <em class="icon icon-md ikon ikon-user-chat"></em>
+                                            </div>
+                                            <div class="feature-text">
+                                                <h5 class="title-sm tc-alternet">KYC / AML</h5>
+                                                <p>We had implemented great security measures to insure KYC/AML guidelines.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                                <!-- <div class="d-flex justify-content-center justify-content-lg-start">
+                                    <ul class="btn-grp animated" data-animate="fadeInUp" data-delay=".8">
+                                        <li><a href="#" class="btn btn-grad btn-round btn-md">Download Now</a></li>
+                                        <li>
+                                            <ul class="btn-grp gutter-15px">
+                                                <li><a href="#"><em class="fab fa-apple"></em></a></li>
+                                                <li><a href="#"><em class="fab fa-android"></em></a></li>
+                                                <li><a href="#"><em class="fab fa-windows"></em></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="col-lg-5 order-first order-lg-last">
+                                <div class="nk-block-img nk-block-img-s2 text-center text-lg-left animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                    <img src="network_logo.png" alt="">
+                                </div>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .block @s -->
+                </div>
+            </section>
+
+<section class="section bg-theme tc-light ov-h has-ovm" id="roadmap" style="background-color: #0B0E11";>
+                <div class="container">
+                    <!-- Section Head @s -->
+                    <div class="section-head text-center wide-auto-sm">
+                        <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;color:#FFF;">Roadmap</h4>
+                        <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">The following ICO Roadmap aims to give general guidance on the model and how ICOs are conducted.</p>
+                    </div><!-- .section-head @e -->
+                    <!-- Block @s -->
+                    <div class="nk-block">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12">
+                                <div class="roadmap-all mgb-m50 animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                                    <div class="roadmap-wrap roadmap-wrap-done roadmap-wrap-s1 mb-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg">
+                                                <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                                    <div class="roadmap-step roadmap-step-s1">
+                                                        <div class="roadmap-head roadmap-head-s1">
+                                                            <span class="roadmap-time roadmap-time-s1">September 2021</span>
+                                                            <span class="roadmap-title roadmap-title-s1">Platform &amp; Pre-Sale</span>
+                                                        </div>
+                                                        <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                            <li>Software Launch</li>
+                                                            <li>Website Launch and Pre-Sale</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                            <div class="col-lg">
+                                                <div class="roadmap roadmap-s1 text-lg-center">
+                                                    <div class="roadmap-step roadmap-step-s1">
+                                                        <div class="roadmap-head roadmap-head-s1">
+                                                            <span class="roadmap-time roadmap-time-s1">October 2021</span>
+                                                            <span class="roadmap-title roadmap-title-s1">Marketing Outreach</span>
+                                                        </div>
+                                                        <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                            <li>Auditing</li>
+                                                            <li>Social Media launching</li>
+                                                            <li>Perform a pre-sale on the exchanges platform</li>
+                                                            <li>Marketing push to promote the project</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                            <div class="col-lg">
+                                                <div class="roadmap roadmap-s1 text-lg-center">
+                                                    <div class="roadmap-step roadmap-step-s1">
+                                                        <div class="roadmap-head roadmap-head-s1">
+                                                            <span class="roadmap-time roadmap-time-s1">November 2021</span>
+                                                            <span class="roadmap-title roadmap-title-s1">Listing &amp; Launching</span>
+                                                        </div>
+                                                        <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                            <li>Apply for listings on Coingecko, Coinmarketcap</li>
+                                                            <li>Redesign UI contest to make the best brand awareness.</li>
+                                                            <li>Contact Youtubers, Influencers to promote project.</li>
+                                                            <li>Submit project's info on Etherscan, Blockfolio listing</li>
+                                                            <li>Announce our partnerships</li>
+                                                            <li>Launch application</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                            <div class="col-lg">
+                                                <div class="roadmap roadmap-s1 text-lg-center">
+                                                    <div class="roadmap-step roadmap-step-s1">
+                                                        <div class="roadmap-head roadmap-head-s1">
+                                                            <span class="roadmap-time roadmap-time-s1">December 2021</span>
+                                                            <span class="roadmap-title roadmap-title-s1">Running &amp; Expanding</span>
+                                                        </div>
+                                                        <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                            <li>Run our first testnet with the ETH reward function</li>
+                                                            <li>Run our Android/IOS tracking reward application</li>
+                                                            <li>Run our first AMA</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .col -->
+                                        </div><!-- .row -->
+                                    </div>
+                                   
+                                </div>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .block @e -->
+                </div>
+                <div class="nk-ovm shape-n"></div>
+            </section>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="section-head text-center wide-auto-sm">
+                        <h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000;">Board Team Members</h4>
+                        <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">The DC Coin Team combines a passion for esports, industry experise &amp; proven record in finance, development, marketing &amp; licensing.</p>
+                    </div>
+				
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Michele Miller</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Patricia Knott</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Justin Ramos</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Mary Huntley</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<br>
+<br>
+<br>
+<div class="row justify-content-center">
+<h4 class="title title-semibold animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000;">Frequently asked questions</h4>
+                            <div class="col-lg-10">
+
+                                <div class="gap-1x"></div>
+                            </div><!-- .col -->
+                            <div class="col-lg-10">
+                                <div class="tab-content animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+                                    <div class="tab-pane fade active show" id="general-questions-07">
+                                        <div class="accordion accordion-faq" id="faq-24">
+                                            <div class="accordion-item bg-white current">
+                                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse" data-target="#faq-24-1" aria-expanded="false">
+                                                    What is the DC coin?  
+                                                </h5>
+                                                <div id="faq-24-1" class="collapse" data-parent="#faq-24" style="">
+                                                    <div class="accordion-content">
+                                                        <p>DC is a charity token with a robust charitable strategy designed to maximize profitability for investors and social impact reach in the world.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item bg-white">
+                                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse" data-target="#faq-24-2">
+                                                    What is the Token Ticker?  
+                                                </h5>
+                                                <div id="faq-24-2" class="collapse" data-parent="#faq-24">
+                                                    <div class="accordion-content">
+                                                        <p>DC.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item bg-white">
+                                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse" data-target="#faq-24-3">
+                                                    When will DC coin be pre-sale?  
+                                                </h5>
+                                                <div id="faq-24-3" class="collapse" data-parent="#faq-24">
+                                                    <div class="accordion-content">
+                                                        <p>DC coin plans to have its public sale in September.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item bg-white">
+                                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse" data-target="#faq-24-4">
+                                                    How much has DC coin raised?  
+                                                </h5>
+                                                <div id="faq-24-4" class="collapse" data-parent="#faq-24">
+                                                    <div class="accordion-content">
+                                                        <p>DC coin is in the process of undertaking a pre-sale, and the details will be updated accordingly.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                </div>
+                            </div><!-- .col -->
+                        </div>		
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="banner" style="display: flex; justify-content: center;">
+<div class="backtotop" style="display: none;">
+<a href="#banner"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+<div style="max-width: 80%;"><div class="row" style="display: flex;">
+<div class="col-lg-5 banner-txt"><h3 style="font-size: 48px;">Buy $PPN</h3>
+<p>Enter the amount of $ETH you would like to swap for $PPN. Click Connect Wallet then Swap Having issues connecting your wallet? Please buy directly 
+on Uniswap or see our how to buy section.</p>
+<a href="https://app.uniswap.org/#/swap?theme=light&amp;inputCurrency=ETH&amp;outputCurrency=0x95f49ae439537e50ced0374c1b52c42aa899741c&amp;use=v2" target="_blank">Buy on Uniswap</a></div>
+<div class="col-lg-7"><div class="banner-img" style="display: flex; justify-content: flex-end;">
+<iframe src="https://app.uniswap.org/#/swap?theme=light&amp;inputCurrency=ETH&amp;outputCurrency=0x95f49ae439537e50ced0374c1b52c42aa899741c&amp;use=v2" height="660px" width="100%" id="myId" style="border: 0px; display: block; border-radius: 10px;"></iframe></div></div></div></div></section>						
+
+<div class="nk-block block-footer">
+                        
+                        <div class="footer-bottom section-sm">
+                            <div class="row justify-content-between align-items-center">
+                                
+                                <div class="col-12 text-center">
+                                    <div class="copyright-text">
+                                        <p>© DC Coin, 2021</p>
+                                    </div>
+                                </div><!-- .col -->
+                            </div>
+                        </div> 
+                    </div>
+</body>
+
+
+<script>
+</script>
+<script src="css/css1/script/scripts.js"></script>
+<script src="css/css1/script/js.js"></script>
+<script src="css/css1/script/jquery.bundle.js"></script>
+<script src="css/css1/script/_Incapsula_Resource.js"></script>
+<script src="css/css1/script/chart.js"></script>
+<script src="css/css1/script/analytics.js"></script>
+
+</html>
