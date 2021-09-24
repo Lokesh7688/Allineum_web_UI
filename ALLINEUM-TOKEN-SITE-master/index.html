@@ -1,0 +1,803 @@
+<html>
+
+<head>
+    <link href="css/components.css" rel="stylesheet" type="text/css">
+    <link href="css/eco.css" rel="stylesheet" type="text/css">
+    <link href="css/style-zinnia.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor.bundle.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<style>
+    .our-team {
+        padding: 30px 0 40px;
+        margin-bottom: 30px;
+        background-color: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .our-team .picture {
+        display: inline-block;
+        height: 130px;
+        width: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .our-team .picture::before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background-color: #1369ce;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.9;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .picture::before {
+        height: 100%;
+    }
+
+    .our-team .picture::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #1369ce;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .our-team .picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .picture img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+    }
+
+    .our-team .title {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+
+    .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #1369ce;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social {
+        bottom: 0;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+    }
+
+    .our-team .social li a {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+    }
+
+    .our-team .social li a:hover {
+        color: #1369ce;
+        background-color: #f7f5ec;
+    }
+</style>
+
+
+<body>
+
+    <!-- HEADER SECTION HERE -->
+    <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+
+        <div class="header-main">
+            <div class="header-container header-container-s1">
+                <div class="header-wrap">
+
+                    <div class="header-logo logo animated fadeInDown" data-animate="fadeInDown" data-delay=".65"
+                        style="visibility: visible; animation-delay: 0.65s;">
+                        <a href="index.html" class="logo-link">
+                            <img class="nav-logo" src="images/nav-logo.svg"></a>
+                        </a>
+                    </div>
+
+
+                    <div class="header-nav-toggle">
+                        <a href="#" class="navbar-toggle" data-menu-toggle="header-menu">
+                            <div class="toggle-line">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="header-navbar header-navbar-s1">
+                        <nav class="header-menu justify-content-between" id="header-menu">
+                            <ul class="menu-btns  animated remove-animation fadeInDown" data-animate="fadeInDown"
+                                data-delay=".75" style="visibility: visible; animation-delay: 0.75s;">
+
+
+                            </ul>
+                            <ul class="menu align-items-center animated remove-animation fadeInDown"
+                                data-animate="fadeInDown" data-delay=".85"
+                                style="visibility: visible; animation-delay: 0.85s;">
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#home">Home</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#why">About</a></li>
+
+                                <li class="menu-item"><a class="menu-link nav-link"
+                                        href="index.html#tokensale">Ecosystem</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#documents">Our
+                                        Technology</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link"
+                                        href="index.html#services">Roadmap</a>
+                                </li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#team">Team</a></li>
+
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#faqs">Faqs</a></li>
+                                <li><a href="#" class="btn-md btn-round btn-auto btn-buy-token"><span>Buy
+                                            Token</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-navbar-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-banner bg-theme-grad-alt">
+            <div class="bg-theme-grad-alt-cover"></div>
+            <div class="nk-banner has-ovm has-mask">
+                <div class="banner banner-fs banner-single banner-with-token-box-s1">
+                    <div class="ui-shape ui-shape-header ui-shape-light"></div>
+                    <div class="banner-wrap" id="home">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-sm-10 col-md-10 col-xl-9">
+                                    <div class="banner-caption tc-light text-center">
+                                        <img src="images/all_logo.png" height="300px" width="220px"
+                                            style="padding-bottom: 25px;">
+
+                                        <div class="cpn-title animated fadeInUp" data-animate="fadeInUp"
+                                            data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">
+                                            <h1 class="title title-xl-s2 title-semibold">Allineum! A new era for gamblers
+                                            </h1>
+                                        </div>
+                                        <div class="cpn-text cpn-text-center">
+                                            <p class="lead animated fadeInUp" data-animate="fadeInUp" data-delay="1.35"
+                                                style="visibility: visible; animation-delay: 1.35s;">Smart Contract :
+                                                #3xmpPAQs7TCF789VgDTdidKT8VyPQ5ZdYKxE</p>
+                                        </div>
+
+                                        <div class="cpn-btns">
+                                            <ul class="btn-grp justify-content-center animated fadeInUp"
+                                                data-animate="fadeInUp" data-delay="1.45"
+                                                style="visibility: visible; animation-delay: 1.45s;">
+                                                <li><a href="#" class="btn btn-md btn-round btn-with-icon btn-light">
+                                                        <span>NFT Maketplace (soon)</span>
+                                                        <em class="icon fas fa-angle-double-right"></em>
+                                                    </a></li>
+                                                <li><a href="#" class="btn btn-md btn-round btn-with-icon btn-light">
+                                                        <span>White Paper</span>
+                                                        <em class="icon fas fa-angle-double-right"></em>
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-social-wrap text-center animated fadeIn" data-animate="fadeIn"
+                            data-delay="1.55" style="visibility: visible; animation-delay: 1.55s;">
+                            <ul class="banner-social banner-social-vertical">
+                                <li><a href="#"><em class="fab fa-instagram"></em></a></li>
+                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                <li><a href="#"><em class="fab fa-youtube"></em></a></li>
+                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                <li><a href="#"><em class="fab fa-medium"></em></a></li>
+                                <li><a href="#"><em class="fab fa-telegram-plane"></em></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-ovm mask-b mask-contain-bottom"></div>
+            </div>
+
+
+            <div id="particles-bg" class="particles-container particles-bg">
+                <canvas class="particles-js-canvas-el" width="1057" height="683"
+                    style="width: 100%; height: 100%;"></canvas>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- HEADER SECTION ENDS -->
+
+    <!-- ABOUT SECTION STARTS -->
+    <section class="section bg-white" id="why" style="background-image: url('images/node.png');">
+        <div class="ui-shape ui-shape-s1"></div>
+        <div class="container">
+            <div class="nk-block nk-block-about">
+                <div class="row align-items-center gutter-vr-30px">
+                    <div class="col-lg-7 text-center text-lg-left">
+                        <div class="nk-block-text">
+                            <h2 class="title title-semibold animated fadeInUp underline-small about-us-title pb-2"
+                                data-animate="fadeInUp" data-delay=".1"
+                                style="visibility: visible; animation-delay: 0.1s; color: black;">ABOUT
+                                ALLINEUM COIN</h2>
+                            <br><br>
+                            <p class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".2"
+                                style="visibility: visible; animation-delay: 0.2s; color: black;"><strong
+                                    class="about-us-intro">Allineum Coin brings CASINO and 
+									crypto together to form Fraud-free environment
+									to indulge their Gambling Desires</strong></p>
+                            <br>
+                            <h5 class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".3"
+                                style="visibility: visible; animation-delay: 0.3s;"><strong
+                                    style="color: #EF9D10; color: black;" class="about-us-sub-title">MISSION</strong>
+                            </h5><br>
+                            <p class="animated fadeInUp about-us-content" data-animate="fadeInUp" data-delay=".4"
+                                style="visibility: visible; animation-delay: 0.4s; color: black;">Allinem is a ace of spades of a world of gambling.
+									making it a native asset that is integrate across the
+									gambling.</p><br>
+                            <h5 class="tc-dark animated fadeInUp" data-animate="fadeInUp" data-delay=".3"
+                                style="visibility: visible; animation-delay: 0.3s; color: black;">
+                                <strong class="about-us-sub-title">VISION</strong>
+                            </h5><br>
+                            <p class="animated fadeInUp about-us-content" data-animate="fadeInUp" data-delay=".4"
+                                style="visibility: visible; animation-delay: 0.4s; color: black;">Our Vision is to create 'Allineum Army' which will help
+									us to launch into space. Allineum to the moon soon.</p><br>
+                            
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-lg-5">
+                        <div class="nk-block-img nk-block-img-s2 text-center w-100 d-flex justify-content-center text-lg-left animated fadeInUp"
+                            data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                            <img src="images/about-us-logo.svg" alt="" style="width: 250px">
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .block @e -->
+        </div>
+    </section>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- ECOSYSTEM SECTION STARTS -->
+    <section>
+
+        <div id="ecosystem" class="section__eco">
+            <div class="container-1440">
+                <div class="eco-wrap">
+                    <div class="eco-left">
+                        <h2 class="h1 underline-small ecosystem-title pb-2" style="font-size:30; color: #fff;">Our
+                            Project &amp; Ecosystem
+                        </h2><br>
+                        <p class="p ecosystem-content" style="color:#fff; letter-spacing: 0.5px;">
+                            Starting with a supply of 150 millions. And Here we have locked 80% of the total
+							supply in Uniswap, and “burned” the remaining part to dead wallet.<br><br>
+							Also we are comming with a first ever gambling NFT Marketplace which will prove to be ace of spades in the world of NFT's.
+                        </p>
+                    </div>
+                    <div class="eco-right"><a href="#" target="_blank" class="eco-cta w-inline-block">
+                            <div class="eco-cta-holder uni"
+                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                <div class="eco-cta-ico-wrap">
+                                    <img src="images/unicorn.png" loading="lazy" alt="" class=""
+                                        style="opacity: 1; width: 50px;">
+                                </div>
+                                <div class="eco-cta--txt">Liquidity Locked to Uniswap</div>
+                            </div>
+                            <div class="eco-cta--bg"></div>
+                        </a><a
+                            href="https://etherscan.io/tx/0xb65bcbb85c1633b0ab4e4886c3cd8eeaeb63edbb39cacdb9223fdcf4454fd2c7"
+                            target="_blank" class="eco-cta w-inline-block">
+                            <div class="eco-cta-holder indi"
+                                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                <div class="eco-cta-ico-wrap">
+                                    <img src="images/wallet.png" loading="lazy" alt="" class=""
+                                        style="opacity: 1;width: 50px;">
+
+                                </div>
+                                <div class="eco-cta--txt">20% Sent to dead walltet</div>
+                            </div>
+                            <div class="eco-cta--bg"></div>
+                        </a><a
+                            href="https://etherscan.io/tx/0x125714bb4db48757007fff2671b37637bbfd6d47b3a4757ebbd0c5222984f905"
+                            target="_blank" class="eco-cta w-inline-block">
+                        </a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section__coin" style="background-color:#000;">
+            <div class="container-1440">
+                <div data-w-id="ea099555-1b52-f816-b372-4f0de20bb312" class="coin-grid">
+                    <div class="coin-box">
+                        <div class="coin-box-top" style="background-color:#161616;">
+                            <div class="coin-img-wrap">
+                                <img src="images/tild.png" loading="lazy"
+                                    data-w-id="5f864c4a-d4ce-4416-9e35-17cec00f6e38" alt="" class="coin-box--coin"
+                                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+                            </div>
+                        </div>
+                        <div class="coin-box-content" style="background-color: #333333;">
+                            <div class="coin-box-title-wrap">
+                                <h3 class="h3" style="color:#fff;">Allineum</h3><a
+                                    href="https://www.dextools.io/app/uniswap/pair-explorer/0x811beed0119b4afce20d2583eb608c6f7af1954f"
+                                    target="_blank" class="coin-box-graph w-inline-block">
+                                    <img src="images/dvr.png" loading="lazy" alt="" class="coin-box-graph--ico">
+                                    <div class="text-block live-charts" style="width: 100%;">See Live Charts</div>
+                                </a>
+                            </div>
+                            <p class="p ecosystem-coin-content" style="word-spacing: 5px; color: #fff">
+
+                                The Allineum Coin is our foundational currency technological landscape of future gambling generations by accessing computing resources across the platform..<br><br>
+                                
+
+                                You can Buy It from Uniswap. </p>
+                            <br><br>
+                            <a href="#"
+                                class="btn-md btn-round btn-auto btn-buy-token w-100 pl-3 pr-3 text-center"><span>BUY
+                                    ETHEREUM</span></a>
+
+                            <div class="cta-btn__bg" style="opacity: 0;"></div></a>
+                        </div>
+                    </div>
+                    <div class="coin-box">
+                        <div class="coin-box-top" style="background-color:#161616;">
+                            <div class="coin-img-wrap">
+                                <img src="images/tild.png" loading="lazy"
+                                    data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bc" alt="" class="coin-box--coin"
+                                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            </div>
+                        </div>
+                        <div class="coin-box-content" style="background-color: #333333;">
+                            <div class="coin-box-title-wrap">
+                                <h3 class="h3" style="color:#fff;">Allineum v2</h3><a
+                                    href="https://www.dextools.io/app/uniswap/pair-explorer/0x874376be8231dad99aabf9ef0767b3cc054c60ee"
+                                    target="_blank" class="coin-box-graph w-inline-block">
+                                    <img src="images/dvr.png" loading="lazy" alt="" class="coin-box-graph--ico">
+                                    <div class="text-block live-charts">See Live Charts</div>
+                                </a>
+                            </div>
+                            <p class="p ecosystem-coin-content" style="word-spacing: 5px; color: #fff">
+                                The Allineum v2 is our NFT Coin With a total supply of ONLY 50 million tokens
+                                it represents the other end of our Ecosystem. <br><br>
+								It will release along with NFT Maketplace in a upcomming days.
+                            </p>
+                            <br><br>
+                            <a href="#"
+                                class="btn-md btn-round btn-auto btn-buy-token w-100 pl-3 pr-3 text-center"><span>BUY
+                                    Allineum v2/span></a>
+
+
+                        </div>
+                    </div>
+                    <div id="particles-js2" class="particle-class"><canvas class="particles-js-canvas-el" width="1556"
+                            height="1082" style="width: 100%; height: 100%;"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ECOSYSTEM SECTION ENDS -->
+
+    <!-- OUR TECHNOLOGY SECTION STARTS -->
+    <section class="section bg-white" id="services" style="background-image: url('images/node.png');">
+        <div class="ui-shape ui-shape-s4"></div>
+        <div class="container">
+            <!-- Section Head @s -->
+            <div class="section-head text-center wide-auto-sm">
+                <h4 class="title title-semibold animated fadeInUp underline-small our-technology-title"
+                    data-animate="fadeInUp" data-delay=".1"
+                    style="visibility: visible; animation-delay: 0.1s; color :black;">Our Technology
+                </h4>
+                <p class="animated fadeInUp our-technology-subtitle" data-animate="fadeInUp" data-delay=".2"
+                    style="visibility: visible; animation-delay: 0.2s; color :black;">ERC-20 is similar, in some respects, to bitcoin, Litecoin, and any other
+					cryptocurrency; ERC-20 tokens are blockchain-based assets that have value and can be sent and received. </p>
+            </div><!-- .section-head @e -->
+            <!-- Block @s -->
+            <div class="nk-block nk-block-features">
+                <div class="row align-items-center gutter-vr-30px">
+                    <div class="col-lg-7">
+                        <div class="row justify-content-between text-center text-lg-left">
+                            <div class="col-xl-5 col-md-6">
+                                <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp"
+                                    data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+                                    <div class="feature-icon feature-icon-s1 w-100">
+                                        <img src="images/technology1.png" style="width: 50px;">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5 class="title-sm tc-alternet"><strong>Ethereum BlockChain</strong></h5>
+                                        <p>Ethereum is a decentralized public ledger for verifying and recording
+                                            transactions.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-xl-5 col-md-6">
+                                <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp"
+                                    data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+                                    <div class="feature-icon feature-icon-s1 w-100">
+                                        <img src="images/technology2.png" style="width: 50px;">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5 class="title-sm tc-alternet"><strong>Highly Scalable</strong></h5>
+                                        <p>Our platform provides great scalability features based on robust technology.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+
+                            <div class="col-xl-5 col-md-6">
+                                <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp"
+                                    data-delay=".7" style="visibility: visible; animation-delay: 0.7s;">
+                                    <div class="feature-icon feature-icon-s1 w-100">
+                                        <img src="images/technology3.png" style="width: 50px;">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5 class="title-sm tc-alternet"><strong>Safe &amp; Secure</strong></h5>
+                                        <p>As all of the data is stored on blockchain, our system is Safe &amp; Secure
+                                            to use.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-xl-5 col-md-6">
+                                <div class="feature feature-s7 animated fadeInUp" data-animate="fadeInUp"
+                                    data-delay=".6" style="visibility: visible; animation-delay: 0.6s;">
+                                    <div class="feature-icon feature-icon-s1 w-100">
+                                        <img src="images/technology4.png" style="width: 50px;">
+                                    </div>
+                                    <div class="feature-text">
+                                        <h5 class="title-sm tc-alternet"><strong>KYC / AML</strong></h5>
+                                        <p>We had implemented great security measures to insure KYC/AML guidelines.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <!-- <div class="d-flex justify-content-center justify-content-lg-start">
+                            <ul class="btn-grp animated" data-animate="fadeInUp" data-delay=".8">
+                                <li><a href="#" class="btn btn-grad btn-round btn-md">Download Now</a></li>
+                                <li>
+                                    <ul class="btn-grp gutter-15px">
+                                        <li><a href="#"><em class="fab fa-apple"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-android"></em></a></li>
+                                        <li><a href="#"><em class="fab fa-windows"></em></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-5 order-first order-lg-last">
+                        <div class="nk-block-img nk-block-img-s2 text-center text-lg-left animated fadeInUp"
+                            data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+                            <img src="images/network_logo.png" alt="">
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .block @s -->
+        </div>
+    </section>
+
+    <!-- OUR TECHNOLOGY SECTION ENDS -->
+
+    <!-- ROADMAP SECTION STARTS -->
+    <section class="section bg-theme tc-light ov-h has-ovm" id="roadmap" style="background-color: #0B0E11" ;>
+        <div class="container">
+
+            <div class="section-head text-center wide-auto-sm">
+                <h4 class="title title-semibold roadmap-title animated underline-large pb-2 fadeInUp"
+                    data-animate="fadeInUp" data-delay=".1"
+                    style="visibility: visible; animation-delay: 0.1s;color:#FFF;">Roadmap</h4>
+                <p class="animated fadeInUp roadmap-subtitle" data-animate="fadeInUp" data-delay=".2"
+                    style="visibility: visible; animation-delay: 0.2s;">The following Roadmap aims to give general
+                    guidance on the model.</p>
+            </div>
+
+            <div class="nk-block">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="roadmap-all mgb-m50 animated fadeInUp" data-animate="fadeInUp" data-delay=".3"
+                            style="visibility: visible; animation-delay: 0.3s;">
+                            <div class="roadmap-wrap roadmap-wrap-done roadmap-wrap-s1 mb-0">
+                                <div class="row no-gutters">
+                                    <div class="col-lg">
+                                        <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                            <div class="roadmap-step roadmap-step-s1">
+                                                <div class="roadmap-head roadmap-head-s1">
+                                                    <span class="roadmap-time roadmap-time-s1">September 2021</span>
+                                                    <span class="roadmap-title roadmap-title-s1">Platform                                                        </span>
+                                                </div>
+                                                <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                    <li>Website Launch</li>
+													<li>Coin Launch</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="roadmap roadmap-s1 text-lg-center">
+                                            <div class="roadmap-step roadmap-step-s1">
+                                                <div class="roadmap-head roadmap-head-s1">
+                                                    <span class="roadmap-time roadmap-time-s1">October 2021</span>
+                                                    <span class="roadmap-title roadmap-title-s1">Marketing
+                                                        Outreach</span>
+                                                </div>
+                                                <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                    <li>Auditing</li>
+                                                    <li>Social Media launching</li>
+                                                    <li>Marketing push to promote the project</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="roadmap roadmap-s1 text-lg-center">
+                                            <div class="roadmap-step roadmap-step-s1">
+                                                <div class="roadmap-head roadmap-head-s1">
+                                                    <span class="roadmap-time roadmap-time-s1">November 2021</span>
+                                                    <span class="roadmap-title roadmap-title-s1">Listing &amp;
+                                                        Launching</span>
+                                                </div>
+                                                <ul class="roadmap-step-list roadmap-step-list-s1">
+                                                    <li>Apply for listings on Coingecko, Coinmarketcap</li>
+                                                    <li>Redesign UI contest to make the best brand awareness.</li>
+                                                    <li>Contact Youtubers, Influencers to promote project.</li>
+                                                    <li>Submit project's info on Etherscan, Blockfolio listing</li>
+                                                    <li>Announce our partnerships</li>
+                                                    <li>Launch application</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-ovm shape-n"></div>
+    </section>
+
+
+    <!-- ROADMAP SECTION ENDS -->
+
+    <!-- BOARD MEMBERS SECTION STARTS -->
+    <!-- <section class="mt-5">
+        <div class="section-head text-center wide-auto-sm">
+            <h4 class="title members-title title-semibold underline-large pb-2 animated fadeInUp"
+                data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000;">
+                Board Team Members</h4>
+            <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2"
+                style="visibility: visible; animation-delay: 0.2s;">The DC Coin Team combines a passion for esports,
+                industry experise &amp; proven record in finance, development, marketing &amp; licensing.</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">Michele Miller</h3>
+                            <h4 class="title">Web Developer</h4>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                                    aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">Patricia Knott</h3>
+                            <h4 class="title">Web Developer</h4>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                                    aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">Justin Ramos</h3>
+                            <h4 class="title">Web Developer</h4>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                                    aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">Mary Huntley</h3>
+                            <h4 class="title">Web Developer</h4>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                                    aria-hidden="true"></a></li>
+                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                                    aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- BOARD MEMBERS SECTION ENDS -->
+
+    <!-- FAQ SECTION STARTS -->
+    <section class="section ov-h has-ovm">
+        <div class="row justify-content-center">
+            <h4 class="title faq-title title-semibold underline-large pb-2 animated fadeInUp" data-animate="fadeInUp"
+                data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000;">FREQUENTLY ASKED
+                QUESTIONS</h4>
+            <div class="col-lg-10">
+
+                <div class="gap-1x"></div>
+            </div>
+            <div class="col-lg-10">
+                <div class="tab-content animated fadeInUp" data-animate="fadeInUp" data-delay=".2"
+                    style="visibility: visible; animation-delay: 0.2s;">
+                    <div class="tab-pane fade active show" id="general-questions-07">
+                        <div class="accordion accordion-faq" id="faq-24">
+                            <div class="accordion-item bg-white current">
+                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse"
+                                    data-target="#faq-24-1" aria-expanded="false">
+                                    What is the Allineum coin?
+                                </h5>
+                                <div id="faq-24-1" class="collapse" data-parent="#faq-24" style="">
+                                    <div class="accordion-content">
+                                        <p>Allineum Coin is a ERC-20 token dedicated to Gambling. 
+										 which will brings CASINO and crypto together to form Fraud-free environment
+										 to indulge their Gambling Desires</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-white">
+                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse"
+                                    data-target="#faq-24-2">
+                                    What is the  Allineum v2 ?
+                                </h5>
+                                <div id="faq-24-2" class="collapse" data-parent="#faq-24">
+                                    <div class="accordion-content">
+                                        <p>Allineum v2 is a NFT Token and Longing to enter the world and planning somthing huge.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-white">
+                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse"
+                                    data-target="#faq-24-3">
+                                    When will Nft Marketplace launch ?
+                                </h5>
+                                <div id="faq-24-3" class="collapse" data-parent="#faq-24">
+                                    <div class="accordion-content">
+                                        <p>We are curruntly working on it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-white">
+                                <h5 class="accordion-title accordion-title-sm collapsed" data-toggle="collapse"
+                                    data-target="#faq-24-4">
+                                    Any other Future Plans?
+                                </h5>
+                                <div id="faq-24-4" class="collapse" data-parent="#faq-24">
+                                    <div class="accordion-content">
+                                        <p>Yes, we also planning our Own crypto exchange. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION ENDS -->
+
+
+
+    <div class="nk-block block-footer">
+
+
+        <div class="footer-bottom section-sm">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-12 text-center">
+                    <div class="copyright-text">
+                        <p>© DC Coin, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/jquery.bundle.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</html>

@@ -1,0 +1,460 @@
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+b,
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+/* HEADER */
+
+.header-main {
+    /*background: #222222;*/
+    /*opacity: 0.5;*/
+    height: 86px;
+    padding: 10px 0 10px 0;
+}
+
+.bg-theme-grad-alt {
+    background: linear-gradient(89.6deg, #FEE141 0.41%, #898052 98.08%);
+    background-image: url("../images/header-bg.png");
+    background-size: cover;
+    background-color: white;
+
+}
+
+.bg-theme-grad-alt-cover {
+    background: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn-buy-token {
+    background: linear-gradient(90deg, #FEE141 0%, #FEC840 57.05%);
+    border-radius: 34px;
+    height: 39px;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 18px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+
+    /* background & Text/1F1F1F */
+    color: #1F1F1F;
+}
+
+.btn-buy-token:hover {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.menu .menu-item a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 10px 0 10px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.nav-logo {
+    height: 49px;
+}
+
+.nav-link {
+    margin: 0;
+}
+
+.header-menu {
+    margin-top: 15px;
+}
+
+/*.has-fixed .menu .menu-item a{*/
+/*    color: #000000 !important;*/
+/*}*/
+
+.has-fixed {
+    color: #222222 !important;
+}
+
+
+.banner-social {
+    background: linear-gradient(180deg, #333333 0%, #666666 100%);
+    border-radius: 48px;
+}
+
+@media (max-width: 1400px) {
+    .header-nav-toggle {
+        display: block;
+    }
+
+    .menu .menu-item a {
+        display: block;
+        color: #000000;
+    }
+
+    .btn-buy-token {
+        margin-top: 20px;
+    }
+
+}
+
+
+/* ABOUT ALLINEUM COIN */
+.underline-small,
+.underline-large {
+    color: green;
+    display: inline-block;
+    position: relative;
+
+}
+
+.underline-small::after {
+    content: '';
+    height: 6px;
+    width: 40%;
+    background: #FFE141;
+    position: absolute;
+    left: calc(0%);
+    bottom: -5px;
+}
+
+.underline-large::after {
+    content: '';
+    height: 6px;
+    width: 100%;
+    background: #FFE141;
+    position: absolute;
+    left: calc(0%);
+    bottom: -5px;
+}
+
+.about-us-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about-us-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.about-us-sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-us-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+}
+
+/* ECOSYSTEM */
+.ecosystem-title {
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    /* identical to box height, or 136% */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.ecosystem-content {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    text-align: justify;
+
+    color: #FAFAFA;
+
+}
+
+.eco-cta-holder {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.coin-box-title-wrap h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.live-charts {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.ecosystem-coin-content {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    text-align: justify;
+
+    color: #FFFFFF;
+
+}
+
+/* OUR TECHNOLOGY */
+
+
+.our-technology-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    /* background & Text/1F1F1F */
+    color: #1F1F1F;
+
+}
+
+.our-technology-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #333333;
+
+}
+
+.feature-text h5 strong {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #333333;
+
+}
+
+.feature-text h5 {
+    text-align: center;
+}
+
+.feature-text p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #555555;
+}
+
+/* ROADMAP */
+.roadmap-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.roadmap-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.roadmap-time-s1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.roadmap-title-s1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.roadmap-step-list-s1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+/* BOARD MEMBERS SECTION */
+.members-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+
+    /* background & Text/1F1F1F */
+    color: #1F1F1F;
+
+}
+
+.members-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #444444;
+
+}
+
+/* FAQ SECTION */
+
+.faq-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.02em;
+
+    /* background & Text/1F1F1F */
+    color: #1F1F1F;
+
+}
+
+.accordion-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: #1F1F1F;
+}
+
+.accordion-content p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    text-align: justify;
+
+    color: #797979;
+
+}
