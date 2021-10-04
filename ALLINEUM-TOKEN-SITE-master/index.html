@@ -158,19 +158,19 @@
                                 data-animate="fadeInDown" data-delay=".85"
                                 style="visibility: visible; animation-delay: 0.85s;">
                                 <li class="menu-item"><a class="menu-link nav-link" href="index.html#home">Home</a></li>
-                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#why">About</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#about">About</a></li>
 
                                 <li class="menu-item"><a class="menu-link nav-link"
-                                        href="index.html#tokensale">Ecosystem</a></li>
-                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#documents">Our
+                                        href="index.html#eco">Ecosystem</a></li>
+                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#tech">Our
                                         Technology</a></li>
                                 <li class="menu-item"><a class="menu-link nav-link"
-                                        href="index.html#services">Roadmap</a>
+                                        href="index.html#roadmap">Roadmap</a>
                                 </li>
-                                <li class="menu-item"><a class="menu-link nav-link" href="index.html#team">Team</a></li>
+                                <!--<li class="menu-item"><a class="menu-link nav-link" href="index.html#team">Team</a></li>-->
 
                                 <li class="menu-item"><a class="menu-link nav-link" href="index.html#faqs">Faqs</a></li>
-                                <li><a href="#" class="btn-md btn-round btn-auto btn-buy-token"><span>Buy
+                                <li><a href="https://app.uniswap.org/#/swap?use=V2&inputCurrency=ETH&outputCurrency=0x13fedd9dca6fe4022025968af41c586820a87966" target="_blank" rel="noopener" class="btn-md btn-round btn-auto btn-buy-token"><span>Buy
                                             Token</span></a></li>
                             </ul>
                         </nav>
@@ -200,7 +200,7 @@
                                         <div class="cpn-text cpn-text-center">
                                             <p class="lead animated fadeInUp" data-animate="fadeInUp" data-delay="1.35"
                                                 style="visibility: visible; animation-delay: 1.35s;">Smart Contract :
-                                                #3xmpPAQs7TCF789VgDTdidKT8VyPQ5ZdYKxE</p>
+                                                <a href="#" id="contract" onclick="CopyToClipboard('contract');return false;">0x13fedd9dca6fe4022025968af41c586820a87966</a><span></p>
                                         </div>
 
                                         <div class="cpn-btns">
@@ -251,7 +251,7 @@
     <!-- HEADER SECTION ENDS -->
 
     <!-- ABOUT SECTION STARTS -->
-    <section class="section bg-white" id="why" style="background-image: url('images/node.png');">
+    <section class="section bg-white" id="about" style="background-image: url('images/node.png');">
         <div class="ui-shape ui-shape-s1"></div>
         <div class="container">
             <div class="nk-block nk-block-about">
@@ -302,7 +302,7 @@
     <!-- ECOSYSTEM SECTION STARTS -->
     <section>
 
-        <div id="ecosystem" class="section__eco">
+        <div id="eco" class="section__eco">
             <div class="container-1440">
                 <div class="eco-wrap">
                     <div class="eco-left">
@@ -315,7 +315,7 @@
 							Also we are comming with a first ever gambling NFT Marketplace which will prove to be ace of spades in the world of NFT's.
                         </p>
                     </div>
-                    <div class="eco-right"><a href="#" target="_blank" class="eco-cta w-inline-block">
+                    <div class="eco-right"><a href="https://etherscan.io/tx/0x128a5f999bf1266731ca0a10c52cec2a8d97acd1293b6f8c687ef9f8cc029e83" target="_blank" class="eco-cta w-inline-block">
                             <div class="eco-cta-holder uni"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                 <div class="eco-cta-ico-wrap">
@@ -326,7 +326,7 @@
                             </div>
                             <div class="eco-cta--bg"></div>
                         </a><a
-                            href="https://etherscan.io/tx/0xb65bcbb85c1633b0ab4e4886c3cd8eeaeb63edbb39cacdb9223fdcf4454fd2c7"
+                            href="https://etherscan.io/tx/0xbe53bcb4d33061e878f26e8e952523add97f5d856ac5b3c84fa4542ab1c526c2"
                             target="_blank" class="eco-cta w-inline-block">
                             <div class="eco-cta-holder indi"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -335,12 +335,9 @@
                                         style="opacity: 1;width: 50px;">
 
                                 </div>
-                                <div class="eco-cta--txt">20% Sent to dead walltet</div>
+                                <div class="eco-cta--txt">25% Sent to dead walltet</div>
                             </div>
                             <div class="eco-cta--bg"></div>
-                        </a><a
-                            href="https://etherscan.io/tx/0x125714bb4db48757007fff2671b37637bbfd6d47b3a4757ebbd0c5222984f905"
-                            target="_blank" class="eco-cta w-inline-block">
                         </a></div>
                 </div>
             </div>
@@ -422,7 +419,7 @@
     <!-- ECOSYSTEM SECTION ENDS -->
 
     <!-- OUR TECHNOLOGY SECTION STARTS -->
-    <section class="section bg-white" id="services" style="background-image: url('images/node.png');">
+    <section id="tech" class="section bg-white" id="services" style="background-image: url('images/node.png');">
         <div class="ui-shape ui-shape-s4"></div>
         <div class="container">
             <!-- Section Head @s -->
@@ -682,20 +679,20 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="our-team">
                         <div class="picture">
-                            <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                            <img class="img-fluid" src=" ">
                         </div>
                         <div class="team-content">
                             <h3 class="name">Mary Huntley</h3>
                             <h4 class="title">Web Developer</h4>
                         </div>
                         <ul class="social">
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                            <li><a href="#" class="fa fa-facebook"
                                     aria-hidden="true"></a></li>
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                            <li><a href="#" class="fa fa-twitter"
                                     aria-hidden="true"></a></li>
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                            <li><a href="#" class="fa fa-google-plus"
                                     aria-hidden="true"></a></li>
-                            <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                            <li><a href="#" class="fa fa-linkedin"
                                     aria-hidden="true"></a></li>
                         </ul>
                     </div>
@@ -707,7 +704,7 @@
     <!-- BOARD MEMBERS SECTION ENDS -->
 
     <!-- FAQ SECTION STARTS -->
-    <section class="section ov-h has-ovm">
+    <section id="faqs" class="section ov-h has-ovm">
         <div class="row justify-content-center">
             <h4 class="title faq-title title-semibold underline-large pb-2 animated fadeInUp" data-animate="fadeInUp"
                 data-delay=".1" style="visibility: visible; animation-delay: 0.1s; color:#000;">FREQUENTLY ASKED
